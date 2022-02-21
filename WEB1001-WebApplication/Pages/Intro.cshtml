@@ -10,6 +10,26 @@
 	</h3>
 </div>
 
+
+
+<div>
+    <form asp-page="IntroModel" method="GET">
+    <div class="form-group">
+    <label asp-for="FirstValue"> Inform Numbers: 
+    </label>
+    <input name="FirstValue" type="number" /><br>
+    </div>
+    <label> More Numbers:  </label>
+    <input name="SecondValue" type="number" /><br>
+
+    <input type="submit" value="submit" />
+    </form>
+</div>
+
+
+
+
+
 @section Intro{
 	<div class="container">
         <p>New section </p>
