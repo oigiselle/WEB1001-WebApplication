@@ -10,22 +10,30 @@
 	</h3>
 </div>
 
-
+<br />
+<br />
 
 <div>
-    <form asp-page="IntroModel" method="GET">
+    <form asp-page="Intro" method="GET">
     <div class="form-group">
-    <label asp-for="FirstValue"> Inform Numbers: 
+    <label asp-for="firstValue"> First Value: 
     </label>
-    <input name="FirstValue" type="number" /><br>
+    <input asp-for="firstValue" type="number" /><br>
     </div>
-    <label> More Numbers:  </label>
-    <input name="SecondValue" type="number" /><br>
+    <label asp-for="secondValue"> Second Value:  </label>
+    <input asp-for="secondValue" type="number" /><br>
+    <br />
 
     <input type="submit" value="submit" />
     </form>
 </div>
-
+<br />
+<br />
+<div>
+    
+    <label> First Value: @Model.firstValue </label><br/>
+    <label> Second Value: @Model.secondValue </label>
+</div>
 
 
 
