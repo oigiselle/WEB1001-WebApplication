@@ -1,6 +1,8 @@
 ﻿@page
 @model WEB1001_WebApplication.Pages.IntroModel
 @{
+    ViewData["Title"] = "Intro";
+    ViewBag.Title = "Create a Web App";
 	Layout = "_Layout";
 }
 
@@ -23,7 +25,7 @@
     <label asp-for="secondValue"> Second Value:  </label>
     <input asp-for="secondValue" type="number" /><br>
     <br />
-
+ 
     <input type="submit" value="submit" />
     </form>
 </div>
@@ -33,6 +35,8 @@
     
     <label> First Value: @Model.firstValue </label><br/>
     <label> Second Value: @Model.secondValue </label>
+    
+    
 </div>
 
 
@@ -40,7 +44,7 @@
 
 @section Intro{
 	<div class="container">
-        <p>New section </p>
+        <p>This is a paragraph from a new section </p>
 	</div>
 }
 

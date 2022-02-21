@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System;
 
 namespace WEB1001_WebApplication.Pages
 {
@@ -13,6 +14,8 @@ namespace WEB1001_WebApplication.Pages
         [FromQuery(Name = "secondValue")]
         public int secondValue { get; set; }
 
+
+       
         public void OnGet()
         {
         }
